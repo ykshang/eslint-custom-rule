@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-disabled-properties-object",
+  "name": "eslint-plugin-bes",
   "version": "0.0.0",
-  "description": "Disabled aome spercific properties for some object",
+  "description": "The set contained some custom rules for BES",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -22,5 +22,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
