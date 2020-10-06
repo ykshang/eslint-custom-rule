@@ -21,8 +21,7 @@ var ruleTester = new RuleTester();
 ruleTester.run("disabled-properties-object", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+       "a(1, 3, 4, 5)"
     ],
 
     invalid: [
