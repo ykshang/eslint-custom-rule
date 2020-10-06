@@ -1,25 +1,12 @@
-/**
- * @description The rule for jQuery to disabled some prototype method/properties.
- * @author kangkang shang
- */
-
-"use strict";
-
-// Rule Definition
-module.exports = {
-    meta: {
-        type: "suggestion",
-        docs: {
-            description: "The rule for jQuery to disabled some prototype method/properties.",
-        },
-        messages: {
-            restrictedMessage: "'{{propertyName}}' is restricted from being used.{{message}}",
-        }
+var ruleTester = new RuleTester();
+ruleTester.run("max-params", rule, {
+  valid: ["function test(d, e, f) {}"],
+  invalid: [
+    {
+        code: "function test(a, b, c, d) {}",
+        errors: [{
+            message: "参数最多不能超过3个",
+        }]
     },
-
-    create(context) {
-        console.log(context);
-
-        return {};
-    }
-};
+  ],
+});
