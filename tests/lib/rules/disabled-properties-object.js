@@ -1,9 +1,25 @@
+/**
+ * @description The rule for jQuery to disabled some prototype method/properties.
+ * @author kangkang shang
+ */
+
+"use strict";
+
+// Rule Definition
 module.exports = {
-  rules: {
-    "disabled-properties-object": {
-      create: function (context) {
-          // rule implementation ...
-      }
+    meta: {
+        type: "suggestion",
+        docs: {
+            description: "The rule for jQuery to disabled some prototype method/properties.",
+        },
+        messages: {
+            restrictedMessage: "'{{propertyName}}' is restricted from being used.{{message}}",
+        }
+    },
+
+    create(context) {
+        console.log(context);
+
+        return {};
     }
-  }
-}; 
+};
