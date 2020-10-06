@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-bes",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "The set contained some custom rules for BES",
   "keywords": [
     "eslint",
@@ -22,5 +22,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "MIT"
+  "license": "ISC"
 }

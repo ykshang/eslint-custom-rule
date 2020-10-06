@@ -1,6 +1,6 @@
-# eslint-plugin-disabled-properties-object
+# eslint-plugin-bes
 
-Disabled aome spercific properties for some object
+The set contained some custom rules for BES
 
 ## Installation
 
@@ -10,21 +10,21 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-disabled-properties-object`:
+Next, install `eslint-plugin-bes`:
 
 ```
-$ npm install eslint-plugin-disabled-properties-object --save-dev
+$ npm install eslint-plugin-bes --save-dev
 ```
 
 
 ## Usage
 
-Add `disabled-properties-object` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `bes` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "disabled-properties-object"
+        "bes"
     ]
 }
 ```
@@ -35,7 +35,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "disabled-properties-object/rule-name": 2
+        "bes/rule-name": 2
     }
 }
 ```
