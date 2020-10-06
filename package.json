@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-bes",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "The set contained some custom rules for BES",
   "keywords": [
     "eslint",

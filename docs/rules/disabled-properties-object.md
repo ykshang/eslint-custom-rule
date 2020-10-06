@@ -11,7 +11,7 @@ Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+$('11').size();
 
 ```
 
@@ -19,7 +19,7 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+$('11').length;
 
 ```
 
