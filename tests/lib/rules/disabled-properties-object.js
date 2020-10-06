@@ -1,5 +1,5 @@
 var ruleTester = new RuleTester();
-ruleTester.run("max-params", rule, {
+ruleTester.run("disabled-properties-object", rule, {
   valid: ["function test(d, e, f) {}"],
   invalid: [
     {
