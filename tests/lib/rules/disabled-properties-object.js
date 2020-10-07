@@ -10,7 +10,7 @@
 
 var rule = require("../../../lib/rules/disabled-properties-object"),
 
-    RuleTester = require("eslint").RuleTester;
+RuleTester = require("eslint").RuleTester;
 
 
 //------------------------------------------------------------------------------
@@ -20,17 +20,17 @@ var rule = require("../../../lib/rules/disabled-properties-object"),
 var ruleTester = new RuleTester();
 ruleTester.run("disabled-properties-object", rule, {
 
-    valid: [
-        `$('1').size()`
-    ],
+  valid: [
+    `'1' == $('1').size()`
+  ],
 
-    invalid: [
-        // {
-        //     code: "$(\"111\").size()",
-        //     errors: [{
-        //         message: "Fill me in.",
-        //         type: "Me too"
-        //     }]
-        // }
-    ]
+  invalid: [
+    {
+      code: "$('111').size()",
+      errors: [{
+        message: "错误写法1",
+        type: ""
+      }]
+    }
+  ]
 });
