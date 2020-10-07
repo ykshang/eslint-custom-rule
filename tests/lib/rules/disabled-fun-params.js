@@ -3,35 +3,20 @@
  * @author kangkang shang
  */
 "use strict";
-
-//------------------------------------------------------------------------------
-// Requirements
-//------------------------------------------------------------------------------
-
 var rule = require("../../../lib/rules/disabled-fun-params"),
-
-    RuleTester = require("eslint").RuleTester;
-
-
-//------------------------------------------------------------------------------
-// Tests
-//------------------------------------------------------------------------------
-
+RuleTester = require("eslint").RuleTester;
 var ruleTester = new RuleTester();
 ruleTester.run("disabled-fun-params", rule, {
-
-    valid: [
-
-        // give me some code that won't trigger a warning
-    ],
-
-    invalid: [
-        {
-            code: "angular.module('uee').filter(item)();",
-            errors: [{
-                message: "Fill me in.",
-                type: "Me too"
-            }]
-        }
-    ]
+  valid: [
+    "filter(item1);",
+  ],
+  invalid: [
+    {
+      code: "filter(item);",
+      errors: [{
+        message: "Fill me in.",
+        type: "Me too"
+      }]
+    }
+  ]
 });
