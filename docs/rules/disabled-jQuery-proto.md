@@ -1,4 +1,4 @@
-# The rule to disabled some prototype peoperties or method for some object (disabled-properties-object)
+# The rule to disabled some prototype peoperties or method for jQuery (disabled-jQuery-proto)
 
 Please describe the origin of the rule here.
 
